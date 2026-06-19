@@ -5,7 +5,7 @@ function Footer(){
         <footer className="footer">
             <div className="footer-container">
                 <h2>Champion <span>NEWS</span></h2>
-                <p>&copy; 2024 Champion News. All rights reserved.</p>
+                <p>&copy; 2026 Champion News. All rights reserved.</p>
             </div>
         </footer>
     )
