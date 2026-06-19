@@ -1,6 +1,7 @@
 import React from "react";
 import './style/Header.css'
 import SearchBar from "./SearchBar";
+import ChampionNews from "../assets/ChampionNews.png";
 
 const Header = ({ searchTerm, setSearchTerm }) =>{
     return(
@@ -8,7 +9,7 @@ const Header = ({ searchTerm, setSearchTerm }) =>{
 
             <div className="header-top">
                 <div className="logo">
-                <div className="logo-icon"></div>
+                    <img src={ChampionNews} alt="Champion News Logo" className="logo-image"/>
                 <h1>
                     Champion <span>NEWS</span>
                 </h1>

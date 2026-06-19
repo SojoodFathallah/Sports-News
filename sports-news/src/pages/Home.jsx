@@ -2,7 +2,8 @@ import {useEffect, useState} from "react";
 import {getSportsNews} from "../services/newsApi";
 import Header from "../components/Header";
 import NewsCard from "../components/NewsCard";
-import "./Home.css";
+import "../components/style/Home.css";
+import Footer from "../components/Footer";
 
 const Home = () => {
     const [articles, setArticles] = useState([]);
@@ -35,12 +36,21 @@ const Home = () => {
                 <section className="latest-news">
                     <h2>Latest News</h2>
                     <div className="news-grid">
-                        {filteredArticles.slice(0,10).map((article,index)=>(
+                        {filteredArticles.slice(0,15).map((article,index)=>(
                             <NewsCard key={index} article={article} />
                         ))}
                     </div>
                 </section>
+                
+                <aside className="trending-news">
+                <h2>Trending News</h2>
+                    {filteredArticles.slice(15,20).map((article,index)=>(
+                        <NewsCard key={index} article={article} type="trending" />
+                    ))}
+
+                </aside>
             </div>
+            <Footer />
         </div>
     )
 }

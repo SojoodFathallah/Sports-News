@@ -6,7 +6,10 @@
 }
 
 .header {
-    background: #013a83;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #003579;
     color:white;
     width: 100%;
     font-family: "Roboto Condensed", sans-serif;
@@ -16,42 +19,27 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 20px 48px;
+    padding: 10px 48px;
+}
+
+.logo-image{
+    width: 80px;
+    height: 80px;
 }
 
 .logo{
     display: flex;
     align-items: center;
-    gap: 12px;
     flex-shrink: 0;
 }
 
 .logo h1 {
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .logo span {
-    color: #7dff00;
-}
-
-.search-container {
-    flex: 1;
-    
-}
-.search-input {
-    width: 300px;
-    max-width: 100%;
-    padding: 14px 18px;
-    border: none;
-    border-radius: 8px;
-    background: #012656;
-    color: white;
-    font-size: 10px;
-    outline: none;
-}
-.search-input::placeholder {
-    color: #9ba79b;
+    color: #6FE510;
 }
 
 .navbar {
@@ -66,12 +54,12 @@
 }
 .navbar li{
  color: #a8b0a8;
- font-size: 10px;
+ font-size: 12px;
  font-weight: 600;
  cursor: pointer;
- transition: 0.3s;
+ transition: 0.1s;
 }
 
 .navbar li:hover {
-    color: #7dff00;
+    color: #6FE510;
 }
