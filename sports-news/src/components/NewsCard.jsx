@@ -11,7 +11,9 @@ function NewsCard({ article, type ="default" }) {
         
         {type ==="trending"?(
           <h3>
-            <a href={article.url} target="_blank" rel="noreferrer" className="trending-link">{article.title}</a>
+            <Link to="/article" state={{ article }} className="trending-link">
+              {article.title}
+            </Link>
           </h3>):(<h3>{article.title}</h3>)
         }
 
@@ -22,7 +24,9 @@ function NewsCard({ article, type ="default" }) {
           <span>{new Date(article.publishedAt).toLocaleDateString()}</span>
 
           {type !== "trending" && (
-            <a href={article.url} target="_blank" rel="noreferrer" className="read-more">Read More</a>
+            <Link to="/article" state={{ article }} className="read-more">
+              Read More
+            </Link>
           )}
         </div>
       </div>

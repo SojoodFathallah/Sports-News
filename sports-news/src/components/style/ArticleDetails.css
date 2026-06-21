@@ -1,0 +1,26 @@
+.article-details {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.article-details img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.article-details h1 {
+    margin-bottom: 15px;
+}
+
+.article-meta {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.article-details p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
